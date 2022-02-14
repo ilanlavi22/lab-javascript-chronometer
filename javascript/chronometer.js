@@ -19,6 +19,10 @@ class Chronometer {
     return this.currentTime % 60;
   }
 
+  getMilliSeconds() {
+    return this.currentTime % 100;
+  }
+
   computeTwoDigitNumber(value) {
     return value < 10 ? `0${value}` : `${value}`;
   }
